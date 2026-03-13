@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<title>Ela's Muffin Group - BeGame</title>
+
+<link rel="stylesheet" href="anasayfa.css">
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="logo-area">
+        <div class="logo" data-key="game">Game</div>
+        <p class="logo2" data-key="orj">Be theme original.</p>
+    </div>
+    
+    <ul class="menu">
+        <li><a href="#hero" data-key="home">Home</a></li>
+        <li><a href="#features" data-key="features">Features</a></li>
+        <li><a href="#weapons" data-key="weapons">Weapons</a></li>
+        <li><a href="#trailer" data-key="trailer">Trailer</a></li>
+        <li><a href="#download" data-key="download">Download</a></li>
+        
+        <li>
+            <select class="dropdown" id="languageSelect">
+                <option selected hidden>Language</option>
+                <option value="en">English</option>
+                <option value="tr">Türkçe</option>
+            </select>
+        </li>
+    </ul>
+</nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="fade" data-key="videogame">Welcome to my video game world!</h1>
+            <div class="trygame">
+                <a href="https://themes.muffingroup.com/be/game/">
+                    <button class="glow-btn" data-key="downloadgame">Download Game</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="features" class="features">
+        <h2 class="fade" data-key="gamefeatures">Game Features</h2>
+        <div class="feature-grid">
+            <div class="feature fade">
+                <h3 data-key="openWorld">Open World</h3>
+                <p data-key="explore">Explore massive cities.</p>
+            </div>
+            
+            <div class="feature fade">
+                <h3 data-key="epicBosses">Epic Bosses</h3>
+                <p data-key="epic">Fight giant mutants and war machines.</p>
+            </div>
+            
+            <div class="feature fade">
+                <h3 data-key="upgradeSystem">Upgrade System</h3>
+                <p data-key="upgrade">Customize your weapons and skills.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="weapons" class="weapons">
+        <h2 class="fade" data-key="weapons">Weapons</h2>
+        <div class="weapon-grid">
+            <div class="gif">
+                <img src="Images/dailyfina-strawberries-9025_512.gif">
+            </div>
+
+            <div class="weapon fade">
+                <h3 data-key="uzi">Laser UZI</h3>
+                <p data-key="fast">Fast firing futuristic weapon.</p>
+            </div>
+
+            <div class="weapon fade">
+                <h3 data-key="spaz">Power SPAZ</h3>
+                <p data-key="massive">Massive shotgun damage.</p>
+            </div>
+
+            <div class="weapon fade">
+                <h3 data-key="cannon">Plasma Cannon</h3>
+                <p data-key="plasma">Explosive plasma technology.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="trailer" class="trailer">
+
+        <h2 class="fade" data-key="gt">Game Trailer</h2>
+
+        <iframe src="https://themes.muffingroup.com/be/game/"allowfullscreen></iframe>
+
+        <div class="cat-gif">
+            <img src="cat.png">
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2 class="fade" data-key="now">Download Now</h2>
+        <br>
+        <p data-key="world">Immerse yourself into the dangerous retro world, full of weapons, mutants, traps and... fruits.<br>
+            Download The Game and save the world!
+        </p>
+        <br>
+        <div class="trygame">
+            <p data-key="puzzle">You should definitely try our new game, the Memory Card Puzzle!</p>
+            <br>
+            <a href="game.html">
+                <button class="glow-btn" onclick="startGame()">TRY GAME</button>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ela Gaming Studio</p>
+    </footer>
+
+    <script src="anasayfa.js"></script>
+</body>
+</html>

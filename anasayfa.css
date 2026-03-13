@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:rgb(255, 255, 255);
+    scroll-behavior:smooth;
+    box-sizing:border-box
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgb(0, 0, 0);
+    position:sticky;
+    top: 0;
+    z-index:100;
+}
+
+#hero,
+#features,
+#weapons,
+#trailer,
+#download{
+scroll-margin-top:90px;
+}
+
+.logo{
+    color:#e79db6;
+    font-size:45px;
+    font-weight:bold;
+}
+
+.logo2{
+    margin-top: auto;
+    font-size:16px;
+    color:#666;
+}
+
+.dropdown{
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    color: black;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu li{
+    margin-left:20px;
+}
+
+.menu a{
+    text-decoration:none;
+    color: white;
+}
+
+.cat-gif{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 80px;
+    z-index: 999;
+    animation: catJump 2.5s infinite;
+}
+
+.cat-gif img{
+    width:100%;
+}
+
+@keyframes catJump{
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+.hero{
+    height:100vh;
+    background:url("arkaplann.jpg") center/cover fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:65px;
+    margin-bottom:20px;
+    background:rgba(0,0,0,0.6);
+    display:inline-block;
+    padding:10px 20px;
+    border-radius: 10px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.glow-btn{
+    padding:15px 35px;
+    font-size:18px;
+    background:#eba7a7f8;
+    border:none;
+    color:white;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 0 10px #ff0055;
+    transition:0.3s;
+}
+
+.glow-btn:hover{
+    box-shadow:0 0 30px #a80239;
+    transform:scale(1.05);
+}
+
+.glow-btn.animate{
+    transform:scale(1.2);
+    box-shadow:0 0 30px #660202;
+}
+
+.features{
+    padding:120px 10%;
+    text-align:center;
+    background:#475357;
+}
+
+.feature-grid{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.feature{
+    background:#aa7291;
+    padding:30px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.feature:hover{
+    transform:translateY(-10px);
+}
+
+.weapons{
+    padding:120px 10%;
+    text-align:center;
+}
+
+.weapon-grid{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.weapon{
+    background:#964545;
+    padding:25px;
+    border-radius:10px;
+}
+
+.trailer{
+    padding:120px 10%;
+    background:#667780;
+    text-align:center;
+}
+
+.trailer iframe{ 
+    width:80%;
+    height:420px;
+    margin-top:40px;
+}
+
+.download{
+    padding:120px 10%;
+    text-align:center;
+}
+
+footer{
+    background: #5e7379;
+    text-align:center;
+    padding:30px;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.gif{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:80px;
+    z-index:999;
+    animation: strawberryJump 2s infinite;
+}
+
+.gif img{
+    width:100%;
+}
+
+@keyframes strawberryJump{ 
+
+    0%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(-15px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+
+}
